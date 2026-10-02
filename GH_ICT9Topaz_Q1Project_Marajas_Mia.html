@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project</title>
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+            scroll-padding: 60px;
+        }
+        
+        body{
+            background-color: rgb(200, 159, 214);
+        }
+
+             *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+
+        .header{
+            background-color: rgb(96, 56, 111);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: auto;
+            text-align: center;
+            height: 50px;
+            position: sticky;
+            z-index: 100;
+            top: 0;
+        }
+
+        .header img{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .header p{
+            position: absolute;
+            right:10px;
+            top: 15px;
+        }
+        
+        .buttons a{
+            color: rgb(214, 121, 235);
+            margin-left: 25px;
+            font-size: 1rem;
+            text-decoration: underline;
+    
+            
+        }
+
+        .Mia{
+            color: rgb(69, 4, 83);
+        }
+        .p{
+            font-style: italic;
+            color: rgb(19, 1, 22);
+        }
+
+        .hero{
+            background-color: rgb(168, 108, 180);
+            background-image: url(https://i.pinimg.com/736x/de/df/3d/dedf3d7388a2214985c5f28d3ab5a865.jpg);
+            min-height: calc(80vh - 90px);
+            padding: 50px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .photo{
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
+        }
+    .logo{
+        width:50px
+        ;
+    }
+    
+    .about-me{
+        
+        padding-top: 35px;
+        background-color: rgb(157, 108, 166);
+        padding: 10px;
+        margin: 25px;
+        margin-bottom: 0px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        
+    }
+
+    .abt-text{
+        text-align: center;
+    }
+
+    .my-works{
+        
+        background-color: rgb(157, 108, 166);
+        padding: 10px;
+        margin: 25px;
+        margin-bottom: 0px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        
+    }
+
+    .img1 {
+    width: 300px;
+    margin-left: 0;
+    }
+
+    .caption{
+        margin-left: 80px;
+    }
+    
+    .work-content {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    }
+
+    .proj1 {
+    margin-left: 0;
+    }
+
+    .img2{
+        width: 300px;
+        margin-left: 0;
+        margin-top: 20px;
+
+    }
+
+    .work-content2{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    }
+
+    .proj2{
+        margin-left: 0;
+    }
+
+    .caption2{
+        margin-left: 65px;
+    }
+
+    .contact-me{
+        padding-top: 35px;
+        background-color: rgb(157, 108, 166);
+        padding: 10px;
+        margin: 25px;
+        margin-bottom: 0px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+    }
+
+    .contacts{
+    background-color: rgb(220, 190, 231);
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .submit{
+    width: 100%;
+    background-color: rgb(102, 65, 113);
+    color: beige;
+    display: block;
+    margin: 0 auto;
+    }
+
+    .select{
+        width: 100%;
+    }
+
+    .name{
+        width: 100%;
+    }
+
+    .email{
+    width: 100%;
+    }
+
+    .Feedback{
+        width: 100%;
+    }
+
+    footer{
+            text-align: center;
+            font-size: 14px;
+            color: #060606;
+            padding: 15px;   
+            background-color: rgb(96, 56, 111); 
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+<header class="header">
+    <nav class="buttons">
+        <img class= "logo"src="Screenshot 2026-09-29 134515.png" alt="logo">
+        <p>
+            <a href="#about">About Me</a>
+            <a href="#works">My Works</a>
+            <a href="#contact">Contact Me</a>
+        </p>
+
+        
+        
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img class="photo" src="Mia Marajas.jpg" alt="picture"> <br>
+        <h1> Hello, I'm <span class="Mia"> Mia Marajas</span></h1>
+        <p class="p"> Aspiring Web Developer</p>
+    </section>
+
+    <!-- About Me -->
+    <div id="about" class="about-me">
+        <h3> About me</h3> </div> <br>
+    <div class="abt-text"> <p>Hello! I am Mia, a student passionate about technology, especially in web development. 
+    </p></div>
+
+    <!-- My Works -->
+    <div id="works" class="my-works">
+        <h3>My Works</h3>
+    </div> <br>
+
+    <!-- First Project -->
+    <div class="work-content">
+        <div>
+        <img class="img1" src="GH_ICT9Topaz_Q1SW1_Marajas_Mia.png" alt="My Top 3 Playlists">
+        <h4 class="caption">My Top 3 Playlists</h4>
+    </div>
+
+    <ul class="proj1">
+        <li>✓ HTML & CSS Projects</li>
+        <li>✓ Spotify Artist</li>
+        <li>✓ Links, and Images</li>
+        <li><a href="https://github.com/Marajas-9T-AY2627" class="github-link">View Github Repository</a></li>
+    </ul>
+
+    <!-- Second Project -->
+    </div>
+        <div class="work-content2">
+        <div>
+        <img class="img2" src="GH_ICT9Topaz_Q1Drill2_Marajas_Mia.png" alt="rate a movie">
+            <h4 class="caption2">My Rate a Movie Form</h4>
+        </div>
+
+        <ul class="proj2">
+            <li>✓ HTML & CSS Projects</li>
+            <li>✓ HTML Forms</li>
+            <li>✓ Movie Reccomendations</li>
+            <li><a href= "https://github.com/Marajas-9T-AY2627">View GitHub Repository</a></li> <br>
+        </ul>
+    </div>
+    <br>
+    <hr>
+
+<!-- Contact Me -->
+    <div id="contact" class="contact-me">
+    <h3>Contact Me</h3>
+    </div> <br>
+
+    <div class="">
+    <form class="contacts">
+        <label for="name">Your Name:</label><br>
+        <input type="text"  placeholder="Mia Marajas" class="name"><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email"  placeholder="miamarajas@gmail.com" class="email"><br><br>
+
+        <label>How did you find me?</label><br>
+        <input type="radio" name="radio">
+        <label for="discord">Facebook</label>
+
+        <input type="radio" name="radio" >
+            <label for="google">Google</label>
+
+        <input type="radio" name="radio" >
+        <label for="friends">Friends</label>
+        <br> <br>
+
+        <label>Interested In:</label><br>
+        <input type="checkbox">
+        <label>Web Design</label>
+
+        <input type="checkbox" >
+        <label>Graphic Design</label>
+
+        <input type="checkbox" >
+        <label>Robotics</label>
+        <br> <br>
+
+        <label>Rate my Portfolio</label><br>
+        <select class="select">
+        <option value="">-- Select Rating --</option>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Above Satisfactory</option>
+        <option value="3">3 - Satisfactory</option>
+        <option value="2">2 - Needs Improvement</option>
+        <option value="1">1 - Poor</option>
+        </select><br><br>
+
+        <label>Any Feedback?</label><br>
+        <textarea placeholder="Feedback here..." rows="5" class="Feedback" ></textarea><br> <br>
+
+        <input type="submit" value="Submit" class="submit">
+    
+    </form>
+    </div>
+    <br> <br>
+
+    <footer>
+    <p>© 2026 Q1 Project | Created by Mia Ysabel V. Marajas | 9-Topaz </p>
+    </footer>
+
+</body>
+</html>
